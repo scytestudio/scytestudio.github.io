@@ -64,6 +64,9 @@
                     <img src="assets/logo.png" alt="ScyteStudio logo" class="logo">
                     <span class="brand-text">Scyte Studio</span>
                 </div>
+                <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+                </button>
                 <div class="nav-items">
                     <button class="nav-btn active" data-target="home">Home</button>
                     <button class="nav-btn" data-target="game">Game</button>
@@ -74,19 +77,45 @@
 
             <main class="container">
                 <section id="home" class="section show">
+                    <div class="hero-slider" data-autoplay="true" data-interval="5000">
+                        <div class="slides">
+                            <figure class="slide active">
+                                <img src="assets/slide0.jpg" alt="Meowsic screenshot">
+                                <figcaption>Meowsic — rhythm cats</figcaption>
+                            </figure>
+                            <figure class="slide">
+                                <img src="assets/slide1.jpg" alt="Meowsic screenshot">
+                                <figcaption>Meowsic — rhythm cats</figcaption>
+                            </figure>
+                            <figure class="slide">
+                                <img src="assets/slide2.jpg" alt="Next game artwork">
+                                <figcaption>New project — coming soon</figcaption>
+                            </figure>
+                            <figure class="slide">
+                                <img src="assets/slide3.jpg" alt="Next game artwork">
+                                <figcaption>New project — coming soon</figcaption>
+                            </figure>
+                        </div>
+                        <button class="slide-prev" aria-label="Previous">‹</button>
+                        <button class="slide-next" aria-label="Next">›</button>
+                        <div class="slide-dots" aria-hidden="false"></div>
+                    </div>
+
                     <h2>Welcome</h2>
                     <p class="lead">We make compact, cozy games, narrative, moody, and playful.</p>
                     <div class="quick">
-                        <div class="card">
-                            <h3>Meowsic</h3>
-                            <p>Our first title. Rhythm + cats. Available on itch.</p>
-                            <a class="cta" href="#" target="_blank" rel="noopener">Open on itch</a>
-                        </div>
-                        <div class="card muted">
-                            <h3>Next Game</h3>
-                            <p>Coming soon — follow for updates.</p>
-                            <span class="soon">COMING SOON</span>
-                        </div>
+                            <div class="card">
+                                <img class="card-thumb" src="assets/meowsic.png" alt="Meowsic">
+                                <h3>Meowsic</h3>
+                                <p>Our first title. Rhythm + cats. Available on itch.</p>
+                                <a class="cta" href="#" target="_blank" rel="noopener">Open on itch</a>
+                            </div>
+                            <div class="card muted">
+                                <img class="card-thumb" src="assets/slide3.png" alt="Next Game">
+                                <h3>Next Game</h3>
+                                <p>Coming soon — follow for updates.</p>
+                                <span class="soon">COMING SOON</span>
+                            </div>
                     </div>
                 </section>
 
@@ -108,7 +137,7 @@
                     </div>
                 </section>
 
-    <section id="about" class="section hidden">
+                <section id="about" class="section hidden">
                     <h2>About Scyte Studio Ltd</h2>
                     <p>🎮 Indie game studio made of a close-knit team of creators with diverse skills and a shared vision for games, and crafting unique storytelling experiences! 🎨✨</p>
                 </section>

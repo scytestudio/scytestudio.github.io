@@ -78,6 +78,10 @@
             .game-media img{max-width:100%;width:100%}
         }
 
+        /* ensure mobile nav sits above slider and content */
+        .nav-items{z-index:120}
+        .hero-slider{z-index:1;position:relative}
+
         .topnav{
             display:flex;
             align-items:center;

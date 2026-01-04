@@ -1,14 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scyte Studios Ltd</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Welcome to Scyte Studios Ltd</h1>
-    <p>Your gateway to innovative software solutions.</p>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ScyteStudio — Games</title>
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
-</body>
-</html>
+    </head>
+    <body>
+        <div class="app">
+            <nav class="topnav">
+                <div class="brand">ScyteStudio</div>
+                <div class="nav-items">
+                    <button class="nav-btn active" data-target="home">Home</button>
+                    <button class="nav-btn" data-target="game">Game</button>
+                    <button class="nav-btn" data-target="about">About</button>
+                    <button class="nav-btn" data-target="contact">Contact</button>
+                </div>
+            </nav>
+
+            <main class="container">
+                <section id="home" class="section show">
+                    <h2>Welcome</h2>
+                    <p class="lead">We make compact, cozy games — dark, moody, and playful.</p>
+                    <div class="quick">
+                        <div class="card">
+                            <h3>Meowsic</h3>
+                            <p>Our first title. Rhythm + cats. Available on itch.</p>
+                            <a class="cta" href="#" target="_blank" rel="noopener">Open on itch</a>
+                        </div>
+                        <div class="card muted">
+                            <h3>Next Game</h3>
+                            <p>Coming soon — follow for updates.</p>
+                            <span class="soon">COMING SOON</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="game" class="section hidden">
+                    <h2>Meowsic</h2>
+                    <p>Meowsic blends rhythm gameplay with cat characters and chill vibes.</p>
+                    <ul>
+                        <li>Platforms: itch.io</li>
+                        <li>Genre: Rhythm / Casual</li>
+                        <li>Status: Released</li>
+                    </ul>
+                    <a class="cta" href="#" target="_blank" rel="noopener">Play Meowsic</a>
+    </section>
+
+    <section id="about" class="section hidden">
+                    <h2>About ScyteStudio</h2>
+                    <p>Indie duo focused on short, polished experiences.</p>
+                </section>
+                <section id="contact" class="section hidden">
+                    <h2>Contact</h2>
+                    <p>For press or collaboration: hello@scytestudio.example</p>
+                </section>
+            </main>
+
+            <footer class="site-footer">
+                <small>&copy; 2025 Scyte Studios Ltd. All rights reserved.</small>
+            </footer>
+        </div>
+
+        <script src="script.js"></script>
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+    </body>
+    </html>

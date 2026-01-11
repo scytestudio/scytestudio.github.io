@@ -1,10 +1,7 @@
 
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
         :root{
+            --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            --font-display: 'Chakra Petch', var(--font-sans);
             --bg:#0b0b0c;
             --panel:#0f0f10;
             --muted:#bdbdbd;
@@ -18,11 +15,34 @@
         html,body{height:100%}
         body{
             margin:0;
-            font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+            font-family:var(--font-sans);
+            font-weight:300; /* thin body text */
             background:linear-gradient(180deg, var(--bg), #070707);
             color:var(--white);
             -webkit-font-smoothing:antialiased;
             -moz-osx-font-smoothing:grayscale;
+        }
+
+        /* Paragraphs and lead copy use a lighter weight for a minimalist look */
+        p, .lead, li { font-weight:300; line-height:1.6; color:var(--muted) }
+
+        /* Headings and display text use Chakra Petch for a tactile, studio feel */
+        h1,h2,h3,h4,h5,h6, .brand-text {
+            font-family:var(--font-display);
+            font-weight:700; /* bold headers */
+            letter-spacing:0.6px;
+            color:var(--white);
+            margin:0 0 8px 0;
+        }
+        .brand-text{font-size:18px; text-transform:uppercase; letter-spacing:1px}
+        .hero-slider figcaption{font-family:var(--font-display); font-weight:600}
+
+        /* Captions and small text use italic style (loaded from Inter) */
+        figcaption, .caption, .site-footer small {
+            font-family:var(--font-sans);
+            font-style:italic;
+            font-weight:300;
+            color:var(--muted);
         }
 
         .app{min-height:100vh;display:flex;flex-direction:column}
